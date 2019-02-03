@@ -3,7 +3,7 @@ FROM python:2.7
 ARG APP_DIR=usr/src/hello_world_printer
 
 WORKDIR /tmp
-ADD requiremnts.txt /tmp/requirements.txt
+ADD requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt
 
 RUN mkdir -p $APP_DIR
